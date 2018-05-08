@@ -1,0 +1,25 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+ul li { list-style-image: none;}
+
+div.project { 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0px; 
+    padding: 1em;
+    float: left;
+}
+
+div.container {
+    width: 90%;
+    max-width: 90%;
+    min-width: 480px;
+}
+
+.menu {
+    text-align: right;
+    margin-right: 1.5em;
+}
