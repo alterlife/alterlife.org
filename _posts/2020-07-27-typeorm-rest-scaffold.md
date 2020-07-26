@@ -6,7 +6,7 @@ categories: Project
 author: jj
 ---
 
-A nodejs library built on top of expressjs. It generates an expressjs handler function that can find or create a model in response to a GET or POST request. It's a quick way to get an express rest endpoint that directly matches a model without writing much code.
+A nodejs library built on top of expressjs. It generates an expressjs handler function that can find or create a row in a table through TypeORM in response to a GET or POST request. It's a quick way to get an express rest endpoint that directly matches a model without writing much code.
 
 <!-- more -->
 
