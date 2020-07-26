@@ -6,11 +6,9 @@ author: jj
 <h2>Projects</h2>
 <ul>
   {% for post in site.posts %}
-    {% if post.categories contains 'Project' %}
         <li>
         <a href="{{ post.url }}">{{ post.title }}</a> -  ( {{ post.date | date_to_string }} )
         {{ post.excerpt }}<br>
         </li>
-    {% endif %}
   {% endfor %}
 </ul>
