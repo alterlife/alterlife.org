@@ -3,8 +3,14 @@ layout: default
 author: jj
 ---
 
-<h2>Welcome!</h2>
-
-<p>This site is hosted on github pages.</p>
-
-<p>There's nothing here right now except <a href="projects.html">some code</a>.</p>
+<h2>Projects</h2>
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains 'Project' %}
+        <li>
+        <a href="{{ post.url }}">{{ post.title }}</a> -  ( {{ post.date | date_to_string }} )
+        {{ post.excerpt }}<br>
+        </li>
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -6,7 +6,7 @@ categories: Project
 author: jj
 ---
 
-A simple tool to reduce the overhead of farm maintenance. Nobody plays farmville now, but when it was all the rage, this utility would harvest all my farmville crop in one click!
+A tool to automate the overhead of farm maintenance. Nobody plays Farmville now, but when it was all the rage, this utility would harvest all my farmville crop in one click!
 
 This will work with other games that use a similar mechanic.
 

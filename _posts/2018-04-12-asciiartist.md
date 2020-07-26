@@ -1,21 +1,23 @@
 ---
 layout: post
-title:  "Alternate's ASCII Artist: A Plain Javascript ASCII Art Generator"
+title:  "Alternate's ASCII Artist"
 date:   2018-04-03 16:16:01 -0600
 categories: Project
 author: jj
+tags: Code ascii-art
 ---
 
-[Alternate's ASCII Artist](https://alterlife.github.io/ASCII-Artist/index.html) is a small piece of Javascript code that can convert an Image into ASCII art. 
+A purely client-side HTML/Javascript program that can convert Images into ASCII art. 
 
 It uses just plain javascript in the browser and nothing is uploaded to a server.
 
 
-ASCII Artist can Convert this:
+ASCII Artist can Convert this:<br>
 <img src="/assets/images/asciiartist/moonga.jpg">
 
-Into Black & White / Plain Text:
+Into Black & White / Plain Text:<br>
 <div style="width: 42em; overflow: hidden">
+
 <pre style="background-color: white; color: black; font-size: .5em; ">                                                                                                                     
  .::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  
  .::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  
