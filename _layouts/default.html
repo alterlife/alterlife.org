@@ -14,6 +14,9 @@
     <header class="page-header" role="banner">
       <div class="container">
         <h1>Alterlife Creations</h1>
+        {% if page.subtitle %}
+        <div class="subtitle">{{ page.subtitle }}</div>
+        {% endif %}
       </div>
       <nav class="menu">
         <a class="btn {% if page.url == '/' %}active{% endif %}" href="/">Projects</a>
