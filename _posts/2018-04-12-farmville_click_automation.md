@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Farmville click automation"
-date:   2013-04-18 16:16:01 -0600
+title: "Farmville click automation"
+date: 2013-04-18 16:16:01 -0600
 categories: Project
 author: jj
 ---
