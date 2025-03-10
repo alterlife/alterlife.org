@@ -16,8 +16,8 @@
         <h1>Alterlife Creations</h1>
       </div>
       <nav class="menu">
-        <a class="btn" href="/">Home</a>
-        <a class="btn" href="/contact.html">Contact</a>
+        <a class="btn {% if page.url == '/' %}active{% endif %}" href="/">Home</a>
+        <a class="btn {% if page.url contains 'contact' %}active{% endif %}" href="/contact.html">Contact</a>
       </nav>
     </header>
 
