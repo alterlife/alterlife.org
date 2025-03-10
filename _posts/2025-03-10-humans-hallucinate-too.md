@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Humans hallucinate too"
-date: 2023-10-01
+date: 2025-03-10
 categories: Blog
 tags: [AI, GitHub Copilot, Claude, code-generation, thoughts]
 ---
