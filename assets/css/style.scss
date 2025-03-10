@@ -84,10 +84,10 @@ div.container {
         }
 
         &.active {
-            background: var(--color-accent);
-            color: var(--color-primary);
-            border-color: transparent;
-            font-weight: 600;
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+            font-weight: 500;
             position: relative;
             
             &::after {
@@ -96,8 +96,8 @@ div.container {
                 bottom: -8px;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 6px;
-                height: 6px;
+                width: 4px;
+                height: 4px;
                 border-radius: 50%;
                 background: var(--color-accent);
             }
