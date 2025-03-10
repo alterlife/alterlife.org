@@ -8,7 +8,7 @@ tags: [AI, GitHub Copilot, Claude, code-generation, thoughts]
 
 > "Do you use AI to generate code?"
 
-The question caught me off guard during a recent conversation. Not because I don’t use AI—I do—but because I hadn’t really articulated my thoughts about it before. Instead of praising tools like GitHub Copilot or Claude, which have become part of my workflow, I found myself dwelling on their limitations.
+The question caught me off guard during a recent conversation. Not because I don’t use AI—I do—but because I hadn’t really articulated my thoughts about it before. Instead of praising tools like GitHub Copilot or Claude, which have become part of my workflow, I found myself dwelling *exclusively* on their limitations.
 
 "Well, AI hallucinates," I heard myself say, "and you often end up being reduced to a code reviewer." It felt like a reasonable answer at the time, and the conversation moved on.
 
