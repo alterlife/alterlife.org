@@ -15,6 +15,10 @@
     --color-heading-secondary: #7aa2f7;
     --color-heading-tertiary: #7dcfff;
     --color-border: #2c3044;
+    --transition-standard: all 0.2s ease;
+    --border-standard: 2px solid var(--color-border);
+    --border-radius-standard: 8px;
+    --spacing-standard: 1rem;
 }
 
 body {
@@ -33,8 +37,8 @@ div.container {
 
 .page-header {
     background: var(--color-primary);
-    border-bottom: 2px solid var(--color-border);
-    padding: 2rem 1rem;
+    border-bottom: var(--border-standard);
+    padding: calc(var(--spacing-standard) * 2) var(--spacing-standard);
     position: relative;
     
     .container {
@@ -58,29 +62,23 @@ div.container {
     
     .btn {
         background: var(--color-secondary);
-        border: 1px solid var(--color-border);
+        border: var(--border-standard);
         color: var(--color-text);
         padding: 0.7rem 1.4rem;
-        margin-left: 1rem;
-        border-radius: 6px;
+        margin-left: var(--spacing-standard);
+        border-radius: var(--border-radius-standard);
         font-weight: 500;
         font-size: 0.95rem;
         text-decoration: none;
-        transition: all 0.2s ease;
+        transition: var(--transition-standard);
         box-shadow: none;
         letter-spacing: 0.5px;
         
-        &:hover {
+        &:hover, &:active {
             background: var(--color-accent);
             color: var(--color-primary);
             border-color: transparent;
-            transform: none;
-            box-shadow: none;
-        }
-        
-        &:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
         }
 
         &.active {
@@ -125,20 +123,20 @@ div.container {
     display: flex;
     flex-direction: column;
     background: var(--color-card);
-    border: 2px solid var(--color-border);
-    border-radius: 8px;
+    border: var(--border-standard);
+    border-radius: var(--border-radius-standard);
     box-shadow: none;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: var(--transition-standard);
     text-decoration: none !important;
     color: inherit;
     overflow: hidden;
-    padding-bottom: 1rem;
+    padding-bottom: var(--spacing-standard);
 
     &:hover {
         background: var(--color-secondary);
         border-color: var(--color-accent);
-        transform: none;
-        box-shadow: none;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         text-decoration: none !important;
     }
 }
@@ -176,16 +174,18 @@ div.container {
     display: inline-block;
     background: var(--color-primary);
     padding: 0.25rem 0.75rem;
-    border-radius: 15px;
+    border-radius: calc(var(--border-radius-standard) * 2);
     font-size: 0.85rem;
     margin: 0.25rem;
     color: var(--color-heading-tertiary);
     border: 1px solid var(--color-heading-tertiary);
     font-weight: 500;
+    transition: var(--transition-standard);
     
     &:hover {
         background: var(--color-heading-tertiary);
         color: var(--color-primary);
+        transform: translateY(-1px);
     }
 }
 
@@ -218,18 +218,21 @@ footer {
     
     code {
         background-color: var(--color-card);
-        border: 1px solid var(--color-border);
+        border: var(--border-standard);
         color: var(--color-accent);
+        border-radius: calc(var(--border-radius-standard) / 2);
     }
     
     pre {
         background-color: var(--color-card);
-        border: 1px solid var(--color-border);
+        border: var(--border-standard);
+        border-radius: calc(var(--border-radius-standard) / 2);
     }
     
     .highlight {
         background: var(--color-card);
-        border: 2px solid var(--color-border);
+        border: var(--border-standard);
+        border-radius: var(--border-radius-standard);
         
         pre {
             background-color: transparent;
@@ -268,7 +271,8 @@ footer {
 
 ::-webkit-scrollbar-thumb {
     background: var(--color-card);
-    border-radius: 5px;
+    border-radius: calc(var(--border-radius-standard) / 2);
+    transition: var(--transition-standard);
     
     &:hover {
         background: var(--color-accent);
